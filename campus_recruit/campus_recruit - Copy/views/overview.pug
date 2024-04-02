@@ -1,0 +1,149 @@
+extends base
+
+//- Redifining the block of the base.pug
+//- Each file can extend one another file.
+
+//- But , we can have different blocks in each file.
+block content  
+   //- h1 This is the job overview
+   //- Lec_7
+   section#home.bgimage
+      .container-fluid
+         .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12.hero-text
+               h2.hero_title Hi,We are YLD
+           
+   section#top-recruiters
+      .container
+         h1.text-center Top Recruiters
+         html
+  
+   #carouselExampleFade.carousel.slide.carousel-fade
+      .carousel-inner
+         .carousel-item.active
+            img.d-block.w-100(src='img/jobs/Amazon.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Netflix.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Microsoft.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Cisco.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/IBM.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Apple.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/ebay.jpg', alt='...')      
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Goldman_Sachs.jpg', alt='...')       
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Google.jpg', alt='...') 
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Infosys.jpg', alt='...')
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Meta.jpg', alt='...')  
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Salesforce.jpg', alt='...') 
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Nike.jpg', alt='...') 
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/HomeAway.jpg', alt='...')                
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Rackspace.jpg', alt='...')      
+         .carousel-item
+            img.d-block.w-100(src='img/jobs/Opus_Studio.jpg', alt='...')      
+
+      button.carousel-control-prev(type='button', data-bs-target='#carouselExampleFade', data-bs-slide='prev')
+         span.carousel-control-prev-icon(aria-hidden='true')
+         span.visually-hidden Previous 
+      button.carousel-control-next(type='button', data-bs-target='#carouselExampleFade', data-bs-slide='next')
+         span.carousel-control-next-icon(aria-hidden='true')
+         span.visually-hidden Next
+
+   section#reviews(style='margin-bottom: 50px;')
+      .container.mt-3
+         h1.text-center Reviews
+         .row.animate__animated
+            .col-lg-4.mt-4
+               .card.portfolioContent
+                  .card-body.d-flex.flex-column.align-items-center
+                     img.card-img-top.rounded-circle(src='img/users/user-1.jpg', alt='Card image', style='width: 100px; height: 100px;')      
+                     h4.card-title.mt-3 Dheeraj Sharma
+                     p.card-text John Doe&apos;s expertise and guidance were invaluable.
+                     .stars
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+            .col-lg-4.mt-4
+               .card.portfolioContent
+                  .card-body.d-flex.flex-column.align-items-center
+                     img.card-img-top.rounded-circle(src='img/users/user-2.jpg', alt='Card image', style='width: 100px; height: 100px;')      
+                     h4.card-title.mt-3 Dheeraj Sharma
+                     p.card-text John Doe&apos;s expertise and guidance were invaluable.
+                     .stars
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+            .col-lg-4.mt-4
+               .card.portfolioContent
+                  .card-body.d-flex.flex-column.align-items-center
+                     img.card-img-top.rounded-circle(src='img/users/user-3.jpg', alt='Card image', style='width: 100px; height: 100px;')      
+                     h4.card-title.mt-3 Mohit Sharma
+                     p.card-text John Doe&apos;s expertise and guidance were invaluable.
+                     .stars
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+            .col-lg-4.mt-4
+               .card.portfolioContent
+                  .card-body.d-flex.flex-column.align-items-center
+                     img.card-img-top.rounded-circle(src='img/users/user-4.jpg', alt='Card image', style='width: 100px; height: 100px;')      
+                     h4.card-title.mt-3 Yugdeep Parihar
+                     p.card-text John Doe&apos;s expertise and guidance were invaluable.
+                     .stars
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+            .col-lg-4.mt-4
+               .card.portfolioContent
+                  .card-body.d-flex.flex-column.align-items-center
+                     img.card-img-top.rounded-circle(src='img/users/user-5.jpg', alt='Card image', style='width: 100px; height: 100px;')      
+                     h4.card-title.mt-3 Luvkush Sharma
+                     p.card-text John Doe&apos;s expertise and guidance were invaluable.
+                     .stars
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+            .col-lg-4.mt-4
+               .card.portfolioContent
+                  .card-body.d-flex.flex-column.align-items-center
+                     img.card-img-top.rounded-circle(src='img/users/user-6.jpg', alt='Card image', style='width: 100px; height: 100px;')      
+                     h4.card-title.mt-3 Uday Pratap Singh
+                     p.card-text John Doe&apos;s expertise and guidance were invaluable.
+                     .stars
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning
+                        i.fas.fa-star.text-warning                                                
+   
+   main.main
+      .card-container
+         h1.text-center Apply to Job
+         //- Applying loop over all the tours
+         
+         .row
+            each job in jobs
+               .col-md-4
+                  .card.animate__animated
+                     img.card-img-top(src=`/img/jobs/${job.imageCover}`, alt=`${job.name}`)
+                     .card-body
+                        h5.card-title= `${job.jobTitle}`
+                        h4.card__sub-heading= `${job.Mode}`   
+                        p.card-text= `${job.city}, ${job.state} , ${job.country}`
+                        a.butn.btn--green(href=`/job/${job.slug}`) Details
+            
